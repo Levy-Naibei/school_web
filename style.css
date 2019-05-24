@@ -1,0 +1,137 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: initial;
+	font-size: 20px;
+}
+
+h2 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+h2:after {
+	content: '';
+	background-color: #000;
+	height: 2px;
+	width: 200px;
+	margin: 0 auto;
+	display: block;
+}
+
+.navbar-brand img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+#nav-bar {
+	
+}
+
+.navbar {
+	background-image: linear-gradient(to right, #a517ba, #5f1782);
+	padding: 0 !important;
+}
+
+.navbar-nav li {
+	padding: 0 10px;
+}
+
+.navbar-nav li a {
+	font-weight: 600;
+	color: #fff !important;
+}
+
+ul li {
+	list-style: none;
+}
+
+.active {
+	background-color:gray;
+}
+
+#banner {
+	background-image: linear-gradient(to right, #a517ba, #5f1782);
+	padding-top: 5%;
+	color: #fff;
+}
+
+.promo {
+	margin-top: 100px;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.col-md-6 img {
+	height: 200px;
+	border-radius: 20px;
+}
+
+
+.attendance p {
+	margin-bottom:0;
+}
+
+.progress-bar {
+	border-radius: 16px;
+}
+
+.progress {
+	border-radius: 16px !important;
+	margin-bottom: 10px;
+}
+
+#service .row {
+	text-align: center;
+}
+
+#mgt .row {
+	text-align: center;
+	margin:15px 0 50px 0;
+	
+}
+
+#mgt img {
+	height: 122px;
+	width: 122px;
+	opacity: 0.8;
+}
+
+#mgt img:hover {
+	transition: 1s;
+	opacity: 1;
+}
+
+
+
+.testimonials {
+	border-left: 2px solid grey;
+	margin:15px 0 50px 0;
+}
+
+#user img {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%; 
+	margin: 0 10px;
+	
+}
+
+.user-details {
+	display: inline-block;
+	font-size: 12px;
+
+}
+
+footer {
+	background-color: rgb(0,0,0,0.2);
+}
+
