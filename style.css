@@ -12,24 +12,12 @@ body {
 	font-size: 20px;
 }
 
-h2 {
-	text-align: center;
-	padding-bottom: 20px;
-}
-
-h2:after {
-	content: '';
-	background-color: #000;
-	height: 2px;
-	width: 200px;
-	margin: 0 auto;
-	display: block;
-}
-
 .navbar-brand img {
-	width: 40px;
-	height: 40px;
+	width: 60px;
+	height: 60px;
 	border-radius: 50%;
+	margin-left: 30px;
+	border: 1px solid #fff;
 }
 
 #nav-bar {
@@ -71,10 +59,25 @@ ul li {
 }
 
 .col-md-6 img {
-	height: 200px;
+	height: 240px;
 	border-radius: 20px;
 }
 
+/*-------about us----*/
+
+h2 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+h2::after {
+	content: '';
+	background-color: #000;
+	height: 2px;
+	width: 200px;
+	margin: 0 auto;
+	display: block;
+}
 
 .attendance p {
 	margin-bottom:0;
@@ -89,49 +92,205 @@ ul li {
 	margin-bottom: 10px;
 }
 
-#service .row {
-	text-align: center;
+
+/*-----services------*/
+#service .container {
+	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+	 url(img/study.jpg);
+	 background-size: cover;
+	 background-position: center;
+	 background-attachment: fixed;
+	 color: #efefef !important;
+	 padding-bottom: 20px;
+	 padding-top: 20px;
+	 text-align: center;
 }
 
-#mgt .row {
-	text-align: center;
-	margin:15px 0 50px 0;
-	
+.icon {
+	font-size: 40px;
+	margin: 20px auto;
+	padding: 20px;
+	height: 80px;
+	width: 80px;
+	border: 1px solid #fff;
+	border-radius: 50%;
 }
 
-#mgt img {
+#service p {
+	color: #ccc;
+}
+
+#service .col-md-3:hover {
+	background-color: #007bff;	
+	transition: 0.7s;
+	cursor: pointer;
+}
+
+/*-----management section-----*/
+
+.profile-img {
+	margin-top: 20px;
+}
+
+.profile-img .img-container {
+	opacity: 1;
+	display: block;
+	position: relative;
+}
+
+.profile-img .img-container img {
+	filter: grayscale(0);
 	height: 122px;
 	width: 122px;
-	opacity: 0.8;
+	border-radius: 5px;
 }
 
-#mgt img:hover {
-	transition: 1s;
+.profile-img .img-container img:hover {
+	filter: grayscale(1);
+	cursor: pointer;
+}
+
+.profile-img h4 {
+	color: #007bff !important;
+	font-size: 20px;
+	font-weight: bold; 	
+}
+
+#mgt span {
+	color: #333;
+	font-size: 17px;
+}
+
+#mgt .fas {
+	height: 20px;
+	width: 20px;
+	color: #007bff !important;
+	background-color: #fff;
+	padding: 4px;
+	border-radius: 50%;
+}
+
+.img-container ul {
+	padding: 5px 0;
+	opacity: 0;
+	position: absolute;
+	z-index: 2;
+	bottom: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.img-container:hover ul li {
+	padding: 5px;
+	display: inline-block;
+}
+
+.img-container:hover ul {
 	opacity: 1;
 }
 
+.img-container ul, .img-container ul li {
+	transition: 0.5s;
+}
 
 
-.testimonials {
-	border-left: 2px solid grey;
-	margin:15px 0 50px 0;
+/*-----testimonials-----*/
+#user .row {
+	margin-top: 30px;
+}
+
+#user .col-md-4 {
+	margin: 30px auto;
+}
+
+.profile {
+	padding: 40px 10px 10px;
+	background-color: #efefef;
 }
 
 #user img {
-	height: 60px;
-	width: 60px;
-	border-radius: 50%; 
-	margin: 0 10px;
-	
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
 }
 
-.user-details {
-	display: inline-block;
-	font-size: 12px;
-
+.profile img {
+	border: 5px solid #fff;
+	left: calc(50% - 60px);
+	position: absolute;
+	top: -50px;
 }
 
+.profile h5 {
+	color: #007bff;
+	font-size: 20px;
+}
+
+.profile:hover {
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+#user span {
+	color: #333;
+	font-size: 17px;
+}
+
+blockquote {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+blockquote::before {
+	content: '\93';
+	font-size: 25px;
+	color: #007bff;
+	position: relative;
+	line-height: 20px;
+	bottom: -15px;
+	right: 5px;
+}
+
+blockquote::after {
+	content: '\94';
+	font-size: 25px;
+	color: #007bff;
+	position: relative;
+	line-height: 10px;
+	bottom: -15px;
+	left: 5px;
+}
+
+
+/* --- contact ---*/
+#contact .container {
+	background-color: #efefef;
+	color: #777;
+}
+
+.contact-form {
+	padding: 15px;
+}
+
+.get-us {
+	padding: 5px;
+}
+.contact-us {
+	background-color: #fff;
+	padding: 5px;
+	margin: 10px;
+}
+
+.contact-us .fas {
+	color: #007bff; 
+	font-weight: bold;
+	margin: 10px;
+}
+
+/* ----footer-----*/
 footer {
-	background-color: rgb(0,0,0,0.2);
+	background-color:#5f1782;
+	color: #fff;
 }
 
