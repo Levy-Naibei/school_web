@@ -240,23 +240,24 @@ h2::after {
 blockquote {
 	font-size: 20px;
 	line-height: 30px;
+	position: relative;
 }
 
 blockquote::before {
-	content: '\93';
+	content: open-quote;
 	font-size: 25px;
 	color: #007bff;
-	position: relative;
+	position: absolute;
 	line-height: 20px;
 	bottom: -15px;
 	right: 5px;
 }
 
 blockquote::after {
-	content: '\94';
+	content: close-quote;
 	font-size: 25px;
 	color: #007bff;
-	position: relative;
+	position: absolute;
 	line-height: 10px;
 	bottom: -15px;
 	left: 5px;
