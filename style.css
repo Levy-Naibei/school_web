@@ -52,6 +52,10 @@ ul li {
 	color: #fff;
 }
 
+.input-group {
+	width: 200px;
+}
+
 .promo {
 	margin-top: 100px;
 	font-size: 30px;
@@ -63,7 +67,22 @@ ul li {
 	border-radius: 20px;
 }
 
+
+/*---left column----*/
+
 /*-------about us----*/
+
+.card {
+	background-color: #efefef;
+	margin-bottom: 5px; 
+}
+
+.card:hover {
+	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.7);
+	background-color: #efefef;
+	margin-bottom: 5px;
+	transition: 0.6s
+}
 
 h2 {
 	text-align: center;
@@ -112,8 +131,6 @@ h2::after {
 	padding: 20px;
 	height: 80px;
 	width: 80px;
-	border: 1px solid #fff;
-	border-radius: 50%;
 }
 
 #service p {
@@ -216,7 +233,7 @@ h2::after {
 
 .profile img {
 	border: 5px solid #fff;
-	left: calc(50% - 60px);
+	left: calc(50% - 40px);
 	position: absolute;
 	top: -50px;
 }
@@ -239,28 +256,31 @@ h2::after {
 
 blockquote {
 	font-size: 20px;
-	line-height: 30px;
 	position: relative;
 }
 
 blockquote::before {
-	content: open-quote;
-	font-size: 25px;
+	content: "\93";
 	color: #007bff;
 	position: absolute;
-	line-height: 20px;
-	bottom: -15px;
-	right: 5px;
+	font-size: 2em;
+	margin-left: -0.6em;
+	margin-top: -0.6em;
 }
 
 blockquote::after {
-	content: close-quote;
-	font-size: 25px;
-	color: #007bff;
+	content: "\94";
 	position: absolute;
-	line-height: 10px;
-	bottom: -15px;
-	left: 5px;
+	font-size: 2em;
+	color: #007bff;
+	bottom: 0;
+	right: 0;
+	margin-right: -0.2em;
+	margin-bottom: -0.2em;
+}
+
+blockquote p {
+	display: inline;
 }
 
 

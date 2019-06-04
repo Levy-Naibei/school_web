@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>A complete web</title>
+	<title>School Website</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -40,222 +40,306 @@
 			<div class="row">
 				<div class="col-md-6 pb-3">
 					<p class="lead promo">THE BEST GROUP OF SCHOOLS</p>
-					<p>Register to secure your child's place with the greatest</p>
-					<a class="btn btn-md btn-info" href="#" role='button'> Register</a>
+					<div class="input-group mb-3">
+					  <input type="text" class="form-control" placeholder="Search">
+					  <div class="input-group-append">
+					    <button class="btn btn-info" type="submit">Go</button> 
+					  </div>
+					</div>	
 				</div>
 
 				<div class="col-md-6 text-center">
-					<img src="img/class.png" class="img-fluid">					
+					<img src="img/class.png" class="img-fluid">				
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- About -->
-	<section id="about">
-		<div class="container mt-4 mb-4">
-			<h2>About Us</h2>
-			<div class="row">
-				<div class="col-md-6">
-					<p> Segero is a group of schools geared toward giving the society a wholesome education. To us, education is a harmonious development of mental, physical and spiritual powers.</p>
-					<div>
-						<a class="btn btn-primary btn-md mb-4" role="button" href="about.html">More >> </a>
-					</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 mt-4">
+				<!-- Button to Open the Modal -->
+				<button type="button" class="btn btn-info btn-md mt-4" data-toggle="modal" data-target="#myModal">
+				  Intake On 
+				</button>
 
-					<h5>Mission</h5>
-					<p> <i>Enligten the society for better tomorrow</i> </p>
-					<h5>Vision</h5>
-					<p> <i>To Eradicate illitracy from all spheres of life</i> </p>
-					<h5>Motto</h5>
-					<p> <i>Solar Scriptura</i> </p>
+				<!-- The Modal -->
+				<div class="modal fade" id="myModal">
+				  <div class="modal-dialog modal-dialog-centered">
+				    <div class="modal-content">
 
-				</div>
+				      <!-- Modal Header -->
+				      <div class="modal-header">
+				        <h4 class="modal-title">Register Today</h4>
+				        <button type="button" class="close" data-dismiss="modal">&times;</button>
+				      </div>
 
-				<div class="col-md-6">
-					<p>Students</p>
-					<div class="progress">
-						<div class="progress-bar" style="width: 85%;">85%</div>
-					</div>
+				      <!-- Modal body -->
+				      <div class="modal-body">
+				        <form id="register" action="/action_page.php">
+					        <div class="form-group clearfix">
+							    <label class="float-left" for="name"><b>First Name</b></label>
+							    <input type="text" class="form-control" id="name">
+							</div>
+							<div class="form-group">
+							    <label for="name"><b>Surname</b></label>
+							    <input type="text" class="form-control" id="name">
+							</div>
+							<div class="form-group">
+							    <label for="email"><b>Email address</b></label>
+							    <input type="email" class="form-control" id="email">
+							</div>
+						    <div class="form-group">
+							    <label for="pwd"><b>Password</b></label>
+							    <input type="password" class="form-control" id="pwd">
+						    </div>
+							<div class="form-group">
+								<label for="sel1"><b>Education Level</b></label>
+								<select class="form-control" id="sel1">
+									<option>Lower Primary</option>
+									<option>Upper Primary</option>
+								</select>
+							</div>
+						  <div class="form-group form-check">
+						    <label class="form-check-label">
+						      <input class="form-check-input" type="checkbox"> Remember me
+						    </label>
+						  </div>
+						  <button type="submit" class="btn btn-info mr-4 mb-2">Submit</button>
+						  <button class="btn btn-danger mb-2" href="#register" type="button">Cancel</button>
+						</form>
+				      </div>
 
-					<p>Teachers</p>
-					<div class="progress">
-						<div class="progress-bar" style="width: 45%;">45%</div>
-					</div>
+				      <!-- Modal footer -->
+				      <!-- <div class="modal-footer">
+				        <button type="button" class="btn btn-danger ml-4" data-dismiss="modal">Close</button>
+				      </div> -->
 
-					<p>Stakeholders</p>
-					<div class="progress">
-						<div class="progress-bar" style="width: 12%;">12%</div>
-					</div>
+				    </div>
+				  </div>
 				</div>
 			</div>
-		</div>
-	</section>
+			<div class="col-md-10">
+				<!-- About -->
+				<section id="about">
+					<div class="container mt-4 mb-4">
+						<h2>About Us</h2>
+						<div class="row">
+							<div class="col-md-4">
+								<div id="accordion">
+								  <div class="card">
+								    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+								    <div class="card-header text-center">Our Mission</div>
+								 	</a>
 
-	<!-- Services -->
-	<section id="service">
-		<div class="container mt-4 mb-4">
-			<h2>Our Services</h2>
-			<div class="row services">
-				<div class="col-md-3 text-center">
-					<div class="icon"><i class="fas fa-graduation-cap"></i></div>
-					<p>Segero values academic excelence</p>
-				</div>
-				<div class="col-md-3 text-center">
-					<div class="icon"> <i class="fas fa-volleyball-ball"></i> </div>
-					<p>Segero values Physical education</p>
-				</div>
-				<div class="col-md-3 text-center">
-					<div class="icon"><i class="fas fa-bible"></i></div>
-					<p>Segero gives Spiritual growth a priority</p>
-				</div>
-				<div class="col-md-3 text-center">
-					<div class="icon"> <i class="fas fa-users"></i></div>
-					<p>Segero values student's social welfare</p>
-				</div>
-			</div>
-		</div>
-	</section>
+								    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+								      <div class="card-body">
+								        <i>Enligten the society for better tomorrow</i>
+								      </div>
+								    </div>
+								  </div>
 
-	<!-- Our Schools -->
-	<section id="school">
-		<div class="container mt-4 mb-4">
-			<h2><i class="fas fa-school"></i>Our Schools</h2>
-			<div class="row">
-				<ul style="list-style: none;">
-					<li>Main</li>
-					<li>Ziwa</li>
-					<li>Kapseret</li>
-					<li>Cheptiret</li>
-				</ul>
-			</div>
-		</div>
-	</section>
+								  <div class="card">
+								      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+								      <div class="card-header text-center">Our Vision</div> </a>
+								    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+								      <div class="card-body">
+								        <i>To Eradicate illitracy from all spheres of life</i>
+								      </div>
+								    </div>
+								  </div>
 
-	<!-- management -->
-	<section id="mgt">
-		<div class="container mt-4 mb-4">
-			<h2>Management</h2>
-			<p class="text-center">The management is composed of reliable individuals</p>
-			<div class="row">
-				<div class="col-md-3 text-center profile-img">
-					<div class="img-container">
-						<img class="img-responsive" src="img/Avator.jpg" alt="board">
-						<ul>
-							<a href=""><li><i class="fas fa-facebook"></i></li></a>
-							<a href=""><li><i class="fas fa-twitter"></i></li></a>
-							<a href=""><li><i class="fas fa-linkedin"></i></li></a>
-						</ul>
-					</div>
-					<h4>Prof Abc, <span><em>Board Chair</em></span> </h4>
-				</div>
-				<div class="col-md-3 text-center profile-img">
-					<div class="img-container">
-						<img src="img/Avator2.jpg" alt="secretary">
-						<ul>
-							<a href=""><li><i class="fas fa-facebook"></i></li></a>
-							<a href=""><li><i class="fas fa-twitter"></i></li></a>
-							<a href=""><li><i class="fas fa-linkedin"></i></li></a>
-						</ul>
-					</div>
-					<h4>Dr Xyz, <span><em>Board Secretary</em></span> </h4>
-				</div>
-				<div class="col-md-3 text-center profile-img">
-					<div class="img-container">
-						<img src="img/Avator3.jpg" alt="director">
-						<ul>
-							<a href=""><li><i class="fas fa-facebook"></i></li></a>
-							<a href=""><li><i class="fas fa-twitter"></i></li></a>
-							<a href=""><li><i class="fas fa-linkedin"></i></li></a>
-						</ul>
-					</div>
-					<h4>Mr Abc, <span><em>Director</em></span> </h4>
-				</div>
-				<div class="col-md-3 text-center profile-img">
-					<div class="img-container">
-						<img src="img/Avator4.png" alt="pta">
-						<ul>
-							<a href=""><li><i class="fas fa-facebook"></i></li></a>
-							<a href=""><li><i class="fas fa-twitter"></i></li></a>
-							<a href=""><li><i class="fas fa-instagram"></i></li></a>
-						</ul>
-					</div>
-					<h4>Mrs Xyz, <span><em>PTA Chair</em></span> </h4>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- testimonials -->
-	<section id="user">
-		<div class="container mt-4 mb-4">
-			<h2>What Clients Say</h2>
-			<div class="row">
-				<div class="col-md-4 text-center">
-					<div class="profile">
-						<img class="user" src="img/user.png" alt="pta">
-						<blockquote>
-							The school produces all rounded citizen
-						</blockquote>
-						<h5>Eng David Lagat, <span><em>Alumni</em></span> </h5>
-					</div>
-				</div>
-				<div class="col-md-4 text-center">
-					<div class="profile">
-						<img src="img/user1.png" alt="director">
-						<blockquote>
-							Every year the school makes us proud
-						</blockquote>
-						<h5>Dr Jane Rugut, <span><em>Founder - ABC</em></span> </h5>
-					</div>
-				</div>
-				<div class="col-md-4 text-center">
-					<div class="profile">
-						<img src="img/user2.png" alt="board">
-						<blockquote>
-							All my children have gone through this school
-						</blockquote>
-						<h5>Mr Ngetuny, <span><em>Parent</em></span> </h5>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- contact info -->
-	<section id="contact">
-		<div class="container">
-			<h2>Get In Touch</h2>
-			<div class="row">
-				<div class="col-md-6">
-					<form class="contact-form">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Name">
+								  <div class="card">
+								    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+								      <div class="card-header text-center"> Our Motto</div>
+								    </a>
+								    <div id="collapseThree" class="collapse" data-parent="#accordion">
+								      <div class="card-body">
+								        Solar Scriptura
+								      </div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<p> Segero is a group of schools geared toward giving the society a wholesome education. To us, education is a harmonious development of mental, physical and spiritual powers.</p>
+								<div>
+									<a class="btn btn-primary btn-md mb-4" role="button" href="#">More >> </a>
+								</div>
+							</div>
 						</div>
-						<div class="form-group">
-							<input type="number" class="form-control" placeholder="Phone No.">
-						</div>
-						<div class="form-group">
-							<input type="email" class="form-control" placeholder="Email">
-						</div>
-						<div class="form-group">
-							<textarea class="form-control" rows="4" placeholder="Message"></textarea>
-						</div>
-						<div class="">
-							<button type="submit" class="btn btn-outline-primary">SEND</button>							
-						</div>
-					</form>
-				</div>
-				<div class="col-md-6">
-					<div class="get-us">
-					<div class="contact-us"><i class="fas fa-map-marker"></i> Eldoret</div>
-					<div class="contact-us"><i class="fas fa-phone"></i> +254710311897</div>
-					<div class="contact-us"><i class="fas fa-envelope"></i> info@segschools.edu</div>
-					<div class="contact-us"><i class="fas fa-globe"></i> www.segschools.edu</div>
 					</div>
-				</div>
+				</section>
+
+				<!-- Services -->
+				<section id="service">
+					<div class="container mt-4 mb-4">
+						<h2>Our Services</h2>
+						<div class="row services">
+							<div class="col-md-3 text-center">
+								<div class="icon"><i class="fas fa-graduation-cap"></i></div>
+								<p>Segero values academic excelence</p>
+							</div>
+							<div class="col-md-3 text-center">
+								<div class="icon"> <i class="fas fa-volleyball-ball"></i> </div>
+								<p>Segero values Physical education</p>
+							</div>
+							<div class="col-md-3 text-center">
+								<div class="icon"><i class="fas fa-bible"></i></div>
+								<p>Segero gives Spiritual growth a priority</p>
+							</div>
+							<div class="col-md-3 text-center">
+								<div class="icon"> <i class="fas fa-users"></i></div>
+								<p>Segero values student's social welfare</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Our Schools -->
+				<section id="school">
+					<div class="container mt-4 mb-4">
+						<h2><i class="fas fa-school"></i>Our Schools</h2>
+						<div class="row">
+							<ul style="list-style: none;">
+								<li>Main</li>
+								<li>Ziwa</li>
+								<li>Kapseret</li>
+								<li>Cheptiret</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<!-- management -->
+				<section id="mgt">
+					<div class="container mt-4 mb-4">
+						<h2>Management</h2>
+						<p class="text-center">The management is composed of reliable individuals</p>
+						<div class="row">
+							<div class="col-md-3 text-center profile-img">
+								<div class="img-container">
+									<img class="img-responsive" src="img/Avator.jpg" alt="board">
+									<ul>
+										<a href=""><li><i class="fas fa-facebook"></i></li></a>
+										<a href=""><li><i class="fas fa-twitter"></i></li></a>
+										<a href=""><li><i class="fas fa-linkedin"></i></li></a>
+									</ul>
+								</div>
+								<h4>Prof Abc, <span><em>Board Chair</em></span> </h4>
+							</div>
+							<div class="col-md-3 text-center profile-img">
+								<div class="img-container">
+									<img src="img/Avator2.jpg" alt="secretary">
+									<ul>
+										<a href=""><li><i class="fas fa-facebook"></i></li></a>
+										<a href=""><li><i class="fas fa-twitter"></i></li></a>
+										<a href=""><li><i class="fas fa-linkedin"></i></li></a>
+									</ul>
+								</div>
+								<h4>Dr Xyz, <span><em>Board Secretary</em></span> </h4>
+							</div>
+							<div class="col-md-3 text-center profile-img">
+								<div class="img-container">
+									<img src="img/Avator3.jpg" alt="director">
+									<ul>
+										<a href=""><li><i class="fas fa-facebook"></i></li></a>
+										<a href=""><li><i class="fas fa-twitter"></i></li></a>
+										<a href=""><li><i class="fas fa-linkedin"></i></li></a>
+									</ul>
+								</div>
+								<h4>Mr Abc, <span><em>Director</em></span> </h4>
+							</div>
+							<div class="col-md-3 text-center profile-img">
+								<div class="img-container">
+									<img src="img/Avator4.png" alt="pta">
+									<ul>
+										<a href=""><li><i class="fas fa-facebook"></i></li></a>
+										<a href=""><li><i class="fas fa-twitter"></i></li></a>
+										<a href=""><li><i class="fas fa-instagram"></i></li></a>
+									</ul>
+								</div>
+								<h4>Mrs Xyz, <span><em>PTA Chair</em></span> </h4>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- testimonials -->
+				<section id="user">
+					<div class="container mt-4 mb-4">
+						<h2>What Clients Say</h2>
+						<div class="row">
+							<div class="col-md-4 text-center">
+								<div class="profile">
+									<img class="user" src="img/user.png" alt="pta">
+									<blockquote>
+										<p>The school produces all rounded citizen</p>
+									</blockquote>
+									<h5>Eng David Lagat, <span><em>Alumni</em></span> </h5>
+								</div>
+							</div>
+							<div class="col-md-4 text-center">
+								<div class="profile">
+									<img src="img/user1.png" alt="director">
+									<blockquote>
+										<p>Every year the school makes us proud</p>
+									</blockquote>
+									<h5>Dr Jane Rugut, <span><em>Founder - ABC</em></span> </h5>
+								</div>
+							</div>
+							<div class="col-md-4 text-center">
+								<div class="profile">
+									<img src="img/user2.png" alt="board">
+									<blockquote>
+										<p>All my children have gone through this school</p> 
+									</blockquote>
+									<h5>Mr Ngetuny, <span><em>Parent</em></span> </h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- contact info -->
+				<section id="contact">
+					<div class="container">
+						<h2>Get In Touch</h2>
+						<div class="row">
+							<div class="col-md-6">
+								<form class="contact-form">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Name">
+									</div>
+									<div class="form-group">
+										<input type="number" class="form-control" placeholder="Phone No.">
+									</div>
+									<div class="form-group">
+										<input type="email" class="form-control" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<textarea class="form-control" rows="4" placeholder="Message"></textarea>
+									</div>
+									<div class="">
+										<button type="submit" class="btn btn-outline-primary">SEND</button>					
+									</div>
+								</form>
+							</div>
+							<div class="col-md-6">
+								<div class="get-us">
+								<div class="contact-us"><i class="fas fa-map-marker"></i> Eldoret</div>
+								<div class="contact-us"><i class="fas fa-phone"></i> +254710311897</div>
+								<div class="contact-us"><i class="fas fa-envelope"></i> info@segschools.edu</div>
+								<div class="contact-us"><i class="fas fa-globe"></i> www.segschools.edu</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
-	</section>
+	</div>
+
 
 	<footer class="text-center mt-4 mb-4 p-4">
 		<p>&copy;2019 Segero Schools | All Rights Reseved</p>
@@ -267,9 +351,6 @@
 			</p>
 		</div>
 	</footer>
-
-
-
 
 
 
