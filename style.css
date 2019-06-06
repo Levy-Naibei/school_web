@@ -79,7 +79,6 @@ ul li {
 
 .card:hover {
 	box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.7);
-	background-color: #efefef;
 	margin-bottom: 5px;
 	transition: 0.6s
 }
@@ -92,7 +91,7 @@ h2 {
 h2::after {
 	content: '';
 	background-color: #000;
-	height: 2px;
+	height: 3px;
 	width: 200px;
 	margin: 0 auto;
 	display: block;
@@ -131,6 +130,7 @@ h2::after {
 	padding: 20px;
 	height: 80px;
 	width: 80px;
+	color: #9e7e;
 }
 
 #service p {
@@ -178,7 +178,7 @@ h2::after {
 	font-size: 17px;
 }
 
-#mgt .fas {
+#mgt .fab {
 	height: 20px;
 	width: 20px;
 	color: #007bff !important;
@@ -188,11 +188,10 @@ h2::after {
 }
 
 .img-container ul {
-	padding: 5px 0;
 	opacity: 0;
-	position: absolute;
+	position: relative;
 	z-index: 2;
-	bottom: -30px;
+	bottom: 50px;
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -256,31 +255,23 @@ h2::after {
 
 blockquote {
 	font-size: 20px;
-	position: relative;
+	
 }
 
 blockquote::before {
-	content: "\93";
+	content: "\201C";
 	color: #007bff;
-	position: absolute;
+	position: relative;
 	font-size: 2em;
-	margin-left: -0.6em;
-	margin-top: -0.6em;
+	top: 5px;
 }
 
 blockquote::after {
-	content: "\94";
-	position: absolute;
-	font-size: 2em;
+	content: "\201D";
 	color: #007bff;
-	bottom: 0;
-	right: 0;
-	margin-right: -0.2em;
-	margin-bottom: -0.2em;
-}
-
-blockquote p {
-	display: inline;
+	position: relative;
+	font-size: 2em;
+	top: 5px;
 }
 
 
@@ -307,6 +298,38 @@ blockquote p {
 	color: #007bff; 
 	font-weight: bold;
 	margin: 10px;
+}
+
+/*---counter----*/
+#counter .container {
+	background-image: linear-gradient(rgba(49,0,255, 0.8), rgba(132,5,39,0.8));
+	background-size: cover;
+	background-position: center;
+}
+
+.counter-body {
+	color: #fff;
+	text-align: center;
+}
+
+.counter-body #number {
+	margin: 0;
+	font-size: 40px;
+}
+
+.icon-box {
+	margin: 20px auto;
+	height: 60px;
+	width: 60px;
+	border: 1px solid #fff;
+	transform: rotate(45deg); 
+}
+
+.icon-box .fas {
+	color: #ffc800;
+	margin: auto;
+	font-size: 40px;
+	transform: rotate(-45deg); 
 }
 
 /* ----footer-----*/
