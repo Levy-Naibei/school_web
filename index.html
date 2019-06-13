@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>School Website</title>
+	<title>Responsive School Web</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -10,24 +10,24 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<!-- Navigation bar -->
 	<section id="nav-bar">
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top">
-			<a class="navbar-brand" href="#"><img src="logo.png" alt="Logo"></a>
+			<a class="navbar-brand" href="index.html"><img src="logo.png" alt="Logo"></a>
 
 			<button class="navbar-toggler" type="button" data-toggle = "collapse" data-target = "#collapsibleNavBar"> <span class="navbar-toggler-icon"></span> </button> 
 
 			<div class="collapse navbar-collapse" id="collapsibleNavBar">
 				<ul class="navbar-nav mx-auto">
-					<li class="nav-item active"><a class="nav-link" href="#top">Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="#service">Services</a></li>
-					<li class="nav-item"><a class="nav-link" href="#school">Our Schools</a></li>
-					<li class="nav-item"><a class="nav-link" href="#mgt">Management</a></li>
-					<li class="nav-item"><a class="nav-link" href="#user">Testimonials</a></li>
+					<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" target="_blank" href="sections/about.html">About</a></li>
+					<li class="nav-item"><a class="nav-link" target="_blank" href="sections/services.html">Services</a></li>
+					<li class="nav-item"><a class="nav-link" target="_blank" href="sections/schools.html">Our Schools</a></li>
+					<li class="nav-item"><a class="nav-link" target="_blank" href="sections/management.html">Management</a></li>
+					<li class="nav-item"><a class="nav-link" target="_blank" href="sections/users.html">Testimonials</a></li>
 					<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 				</ul>
 			</div>
@@ -58,10 +58,18 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2 mt-4">
-				<!-- Button to Open the Modal -->
-				<button type="button" class="btn btn-info btn-md mt-4" data-toggle="modal" data-target="#myModal">
-				  Intake On 
-				</button>
+				<div class="jumbotron">
+					<div class="count">
+						<!-- Countdown clock -->
+						<h3>Countdown to deadline</h3>
+						<div id="clock"></div>
+					</div>
+
+					<!-- Button to Open the Modal -->
+					<button type="button" class="btn btn-info btn-md mt-4" data-toggle="modal" data-target="#myModal">
+					  Intake Ongoing 
+					</button>
+				</div>
 
 				<!-- The Modal -->
 				<div class="modal fade" id="myModal">
@@ -113,191 +121,46 @@
 				  </div>
 				</div>
 			</div>
+
 			<div class="col-md-10">
-				<!-- About -->
-				<section id="about">
-					<div class="container mt-4 mb-4">
-						<h2>About Us</h2>
+				<!-- counter -->
+				<section id="counter">
+					<div class="container mt-5 mb-4">
 						<div class="row">
-							<div class="col-md-4">
-								<div id="accordion">
-								  <div class="card">
-								    <a class="card-link" data-toggle="collapse" href="#collapseOne">
-								    <div class="card-header text-center">Our Mission</div>
-								 	</a>
-
-								    <div id="collapseOne" class="collapse show" data-parent="#accordion">
-								      <div class="card-body">
-								        <i>Enligten the society for better tomorrow</i>
-								      </div>
-								    </div>
-								  </div>
-
-								  <div class="card">
-								      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-								      <div class="card-header text-center">Our Vision</div> </a>
-								    <div id="collapseTwo" class="collapse" data-parent="#accordion">
-								      <div class="card-body">
-								        <i>To Eradicate illitracy from all spheres of life</i>
-								      </div>
-								    </div>
-								  </div>
-
-								  <div class="card">
-								    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-								      <div class="card-header text-center"> Our Motto</div>
-								    </a>
-								    <div id="collapseThree" class="collapse" data-parent="#accordion">
-								      <div class="card-body">
-								        Solar Scriptura
-								      </div>
-								    </div>
-								  </div>
+							<div class="col-md-4 counter-body">
+								<div class="icon-box">
+									<i class="fas fa-briefcase"></i>
 								</div>
+								<p class="counters">20</p>
+								<p>Projects done</p>
 							</div>
-							<div class="col-md-8">
-								<p> Segero is a group of schools geared toward giving the society a wholesome education. To us, education is a harmonious development of mental, physical and spiritual powers.</p>
-								<div>
-									<a class="btn btn-primary btn-md mb-4" role="button" href="#">More >> </a>
+							<div class="col-md-4 counter-body">
+								<div class="icon-box">
+									<i class="fas fa-trophy"></i>
 								</div>
+								<p class="counters">32</p>
+								<p>Our Achievments</p>
+							</div>
+							<div class="col-md-4 counter-body">
+								<div class="icon-box">
+									<i class="fas fa-users"></i>
+								</div>
+								<p class="counters">1500</p>
+								<p>Population</p>
 							</div>
 						</div>
 					</div>
 				</section>
+			</div>
+		</div>
 
-				<!-- Services -->
-				<section id="service">
-					<div class="container mt-4 mb-4">
-						<h2>Our Services</h2>
-						<div class="row services">
-							<div class="col-md-3 text-center">
-								<div class="icon"><i class="fas fa-graduation-cap"></i></div>
-								<p>Segero values academic excelence</p>
-							</div>
-							<div class="col-md-3 text-center">
-								<div class="icon"> <i class="fas fa-volleyball-ball"></i> </div>
-								<p>Segero values Physical education</p>
-							</div>
-							<div class="col-md-3 text-center">
-								<div class="icon"><i class="fas fa-bible"></i></div>
-								<p>Segero gives Spiritual growth a priority</p>
-							</div>
-							<div class="col-md-3 text-center">
-								<div class="icon"> <i class="fas fa-users"></i></div>
-								<p>Segero values student's social welfare</p>
-							</div>
-						</div>
-					</div>
-				</section>
+		<div class="row">
+			<div class="col-md-2"> </div>
 
-				<!-- Our Schools -->
-				<section id="school">
-					<div class="container mt-4 mb-4">
-						<h2><i class="fas fa-school"></i>Our Schools</h2>
-						<div class="row">
-							<ul style="list-style: none;">
-								<li>Main</li>
-								<li>Ziwa</li>
-								<li>Kapseret</li>
-								<li>Cheptiret</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-				<!-- management -->
-				<section id="mgt">
-					<div class="container mt-4 mb-4">
-						<h2>Management</h2>
-						<p class="text-center">The management is composed of reliable individuals</p>
-						<div class="row">
-							<div class="col-md-3 text-center profile-img">
-								<div class="img-container">
-									<img class="img-responsive" src="img/Avator.jpg" alt="board">
-									<ul>
-										<a href="#"><li><i class="fab fa-facebook"></i></li></a>
-										<a href="#"><li><i class="fab fa-twitter"></i></li></a>
-										<a href="#"><li><i class="fab fa-linkedin"></i></li></a>
-									</ul>
-								</div>
-								<h4>Prof Abc, <span><em>Board Chair</em></span> </h4>
-							</div>
-							<div class="col-md-3 text-center profile-img">
-								<div class="img-container">
-									<img src="img/Avator2.jpg" alt="secretary">
-									<ul>
-										<a href="#"><li><i class="fab fa-facebook"></i></li></a>
-										<a href="#"><li><i class="fab fa-twitter"></i></li></a>
-										<a href="#"><li><i class="fab fa-linkedin"></i></li></a>
-									</ul>
-								</div>
-								<h4>Dr Xyz, <span><em>Board Secretary</em></span> </h4>
-							</div>
-							<div class="col-md-3 text-center profile-img">
-								<div class="img-container">
-									<img src="img/Avator3.jpg" alt="director">
-									<ul>
-										<a href="#"><li><i class="fab fa-facebook"></i></li></a>
-										<a href="#"><li><i class="fab fa-twitter"></i></li></a>
-										<a href="#"><li><i class="fab fa-linkedin"></i></li></a>
-									</ul>
-								</div>
-								<h4>Mr Abc, <span><em>Director</em></span> </h4>
-							</div>
-							<div class="col-md-3 text-center profile-img">
-								<div class="img-container">
-									<img src="img/Avator4.png" alt="pta">
-									<ul>
-										<a href="#"><li><i class="fab fa-facebook"></i></li></a>
-										<a href="#"><li><i class="fab fa-twitter"></i></li></a>
-										<a href="#"><li><i class="fab fa-instagram"></i></li></a>
-									</ul>
-								</div>
-								<h4>Mrs Xyz, <span><em>PTA Chair</em></span> </h4>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!-- testimonials -->
-				<section id="user">
-					<div class="container mt-4 mb-4">
-						<h2>What Clients Say</h2>
-						<div class="row">
-							<div class="col-md-4 text-center">
-								<div class="profile">
-									<img class="user" src="img/user.png" alt="pta">
-									<blockquote>
-										The school produces all rounded citizen
-									</blockquote>
-									<h5>Eng David Lagat, <span><em>Alumni</em></span> </h5>
-								</div>
-							</div>
-							<div class="col-md-4 text-center">
-								<div class="profile">
-									<img src="img/user1.png" alt="director">
-									<blockquote>
-										Every year the school makes us proud
-									</blockquote>
-									<h5>Dr Jane Rugut, <span><em>Founder - ABC</em></span> </h5>
-								</div>
-							</div>
-							<div class="col-md-4 text-center">
-								<div class="profile">
-									<img src="img/user2.png" alt="board">
-									<blockquote>
-										All my children have gone through this school 
-									</blockquote>
-									<h5>Mr Ngetuny, <span><em>Parent</em></span> </h5>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!-- contact info -->
+			<div class="col-md-10">
+			<!-- contact info -->
 				<section id="contact">
-					<div class="container">
+					<div class="container mt-4 mb-4">
 						<h2>Get In Touch</h2>
 						<div class="row">
 							<div class="col-md-6">
@@ -330,54 +193,51 @@
 						</div>
 					</div>
 				</section>
-				<!-- counter -->
-				<section id="counter">
-				<div class="container mt-5 mb-4">
-					<div class="row">
-						<div class="col-md-4 counter-body">
-							<div class="icon-box">
-								<i class="fas fa-briefcase"></i>
-							</div>
-							<p id="number">20</p>
-							<p>Our Projects</p>
-						</div>
-						<div class="col-md-4 counter-body">
-							<div class="icon-box">
-								<i class="fas fa-trophy"></i>
-							</div>
-							<p id="number">32</p>
-							<p>Our Achievments</p>
-						</div>
-						<div class="col-md-4 counter-body">
-							<div class="icon-box">
-								<i class="fas fa-users"></i>
-							</div>
-							<p id="number">1500</p>
-							<p>Population</p>
-						</div>
-					</div>
-			</section>
 			</div>
 		</div>
 	</div>
 
 	<footer class="text-center mt-4 mb-4 p-4">
-		<p>&copy;2019 Segero Schools | All Rights Reseved</p>
+		<p>&copy;2019 Seg Schools | All Rights Reseved</p>
 		<div class="text-info">
 			<p> 
-			<a href="#">Terms</a>&nbsp;&middot;  
-			<a href="#">Policy</a>&nbsp;&middot;  
-			<a href="#">Privacy</a> 
+			<a href="#">Terms & Condition</a>&nbsp;&middot;  
+			<a href="#">Privacy Policy</a>
 			</p>
 		</div>
 	</footer>
 
-	<!-- counter js -->
+	<!-- counter -->
+	<script type="text/javascript">
+		$(document).ready(function($){
+			$(".counters").counterUp({
+			    delay: 10,
+			    time: 1000
+			});
+		});
+	</script>
+
+	<!-- countdown clock -->
+	<script type="text/javascript">
+			$("#clock").countdown('2020/1/1', function(event){
+				var $this = $(this).html(event.strftime(''
+					+ '<div><span></span>%w<span>Weeks</span></div>'
+					+ '<div><span></span>%d<span>Days</span></div>'
+					+ '<div><span></span>%H<span>Hrs</span></div>'
+					+ '<div><span></span>%M<span>Min</span></div>'
+					+ '<div><span></span>%S<span>Sec</span></div>'
+				))
+			});
+	</script>
 
 
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> -->
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+	<script src="jquery.counterup.min.js"></script>
+	<script src="countdown.js"></script>
 </body>
 </html>
